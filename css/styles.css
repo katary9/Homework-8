@@ -70,7 +70,7 @@ li.list:last-child {
     display: flex;
     background: #F5F5F7;
     border-radius: 14px;
-    min-height: 160px;
+    max-height: 160px;
     max-width: 620px;
 }
 .header_content {
@@ -78,9 +78,9 @@ li.list:last-child {
     padding-left: 31px;
 }
 .header_img {
-    position: absolute;
-    right: 620px;
-    top: 25px;
+    position: relative;
+    bottom: 15px;
+    left: 132px;
 }
 .header_title{
     font-family: 'Baloo Bhai 2', cursive;
@@ -118,10 +118,14 @@ article {
     min-width: 500px;
     min-height: 80px;
 }
+.ellipse {
+    display: flex;
+    align-items: center;
+    margin-left: -20px;
+}
 .img_ellipse {
-    position: absolute;
-    top: 261px;
-    left: 473px;
+    position: relative;
+    left: 30px;
 }
 .percent {
     font-family: 'Roboto', sans-serif;
@@ -129,6 +133,7 @@ article {
     font-weight: normal;
     font-size: 13px;
     line-height: 15px;
+    
 }
 .title_article {
     font-family: 'Baloo Bhai 2', cursive;
@@ -145,15 +150,14 @@ article {
 }
 .img_spanish {
    background: #FFFFFF;
-   min-width: 64px;
-   min-height: 64px;
+   padding: 16px;
    border-radius: 12px;
     
 }
 .img_spanish img {
-    position: absolute;
+   /* position: absolute;
     top: 263px;
-    left: 222px;
+    left: 222px;*/
 }
 
 .button_article {
@@ -202,24 +206,18 @@ section li:first-child {
 section li:nth-child(n +2) {
     font-family: 'Baloo Bhai 2', cursive;
     font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 26px;
-
-
-color: #000000;
-opacity: 0.3;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #000000;
+    opacity: 0.3;
 }
-
 .text_block {
     margin-left: -20px;
 }
-
 div.time_clock {
     margin-left: -15px;
-
 }
-
 .section_blok {
     display: flex;
     min-width: 620px;
@@ -228,113 +226,89 @@ div.time_clock {
     background-color: #F5F5F7;
     border-radius: 14px;
     justify-content: space-around;
-    margin-bottom: 16px;
-    
-    
+    margin-bottom: 16px; 
 }
 .img_block {
     background: #FFFFFF;
-   min-width: 64px;
-   min-height: 64px;
-   border-radius: 12px;
-   
-
+    min-width: 64px;
+    min-height: 64px;
+    border-radius: 12px;
 }
 .time {
     align-items: center;
-    display: flex;
-    
+    display: flex; 
 }
 .fire {
     display: flex;
      align-items: center;
 }
-
-/*
-    .img_clock {
-    position: absolute;
-    left: 528px;
-    .img_fire {
-    position: absolute;
-    left: 635px;*/
-
 .title_block {
     font-family: 'Baloo Bhai 2', cursive;
     font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 26px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
 }
 .info_block {
-font-style: normal;
-font-weight: normal;
-font-size: 13px;
-line-height: 15px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
 }
-
 .img_block img {
-    position: absolute;
-    top: 473px;
-    left: 230px;
-   
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 16px 22px 16px 22px;
 }
  .img_fire {
      padding-right: 7px;
- }
-
+}
 .img_clock {
     padding-right: 7px;
-
 }
 .text_time {
     font-family: 'Roboto', sans-serif;
-font-style: normal;
-font-weight: normal;
-font-size: 13px;
-line-height: 15px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
 }
 .text_fire {
-    
-font-style: normal;
-font-weight: normal;
-font-size: 13px;
-line-height: 15px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
 }
 .button_block {
     width: 120px;
-height: 40px;
-left: 712.19px;
-top: 469.58px;
-background: #000000;
-border-radius: 8px;
-font-family: 'Roboto', sans-serif;
-font-style: normal;
-font-weight: bold;
-font-size: 13px;
-line-height: 15px;
-
-color: #FFFFFF;
+    height: 40px;
+    left: 712.19px;
+    top: 469.58px;
+    background: #000000;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 15px;
+    color: #FFFFFF;
 }
 .img_photography {
     background: #FFFFFF;
-border-radius: 12px;
-padding: 16px 16px 16px;
+    border-radius: 12px;
+    padding: 16px 16px 16px;
 }
 aside {
     display: flex;
     flex-direction: column;
     margin-left: 63.46px;
     padding-top: 31px;
-    
 }
-
 .search_block {
     display: flex;
     align-items: center;
-    padding-bottom: 23.67px;
-    
+    padding-bottom: 23.67px; 
 }
-
 form {
     
     display: flex;
